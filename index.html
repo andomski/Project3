@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="title">
+        <h1>Interior Solutions</h1>
+    </header> 
+
+    <nav class="navbar navbar-center navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid px-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-evenly w-100 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <section class="box livingroom">
+                    <h2>Living Rooms</h2>
+                    <button class="tinybox"> Explore more </button>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="box kitchen">
+                    <h2>Kitchens </h2>
+                    <button class="tinybox"> Explore more </button>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="box bathroom">
+                    <h2>Bath Rooms </h2>
+                    <button class="tinybox"> Explore more </button>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="box bedroom">
+                    <h2>Bed Rooms </h2>
+                    <button class="tinybox"> Explore more </button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="px-3">FAQs</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Do you offer free consultations?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    All our consultations are free of charge. We believe in providing value to our clients
+                    before any commitment. Our team will visit your space, understand your needs and provide the best.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long does a typical project take?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The timeline depends on the size and complexity of the project but most interior design jobs take 
+                    between 2 to 6 weeks. During our consultation, we will give you a clear schedule and keep you updated 
+                    throughout the process.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I choose my own materials and colors?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Absolutely! We work closely with you to understand your style and preferences. While we offer expert 
+                    recommendations, the final choice of materials, colors and finishes is always yours.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What if I'm not satisfied with the initial design?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Your satisfaction is our priority. If you're not happy with the first design proposal, we will revise it 
+                    based on your feedback until it aligns with your vision at no extra cost.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class = "contact-form">
+        <h2> Get in Touch </h2>
+        <label> Name: </label>
+        <input type="text" name="name" required>
+
+        <label> Date of Birth: </label>
+        <input type="date" name="dob" required>
+
+        <label> Phone: </label> 
+        <input type="tel" name="phone" required>
+
+        <label> Email: </label>
+        <input type="email" name="email" required> 
+
+        <label> Message: </label>
+        <textarea name="message" rows="4" required></textarea> 
+
+        <button class="submit">Send Message</button>
+
+    </form>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>© 2023 Interior Solutions. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    background-color: #f8ffea;
+}
+
+.title{
+    background-image: url(1347182.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0px 10px 0px;
+}
+
+header {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.985);
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+form.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+}
+
+form.contact-form input,
+form.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button.submit:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+form.contact-form .submit:active {
+    background-color: #004494;
+    transform: scale(0.98);
+}
+.submit {
+    background-color: #f0f0f04a;
+    border-radius: 30px;
+}
+
+.box{
+    border: 5px solid #ccc;
+    margin: 20px 10px;
+    text-align: left;
+    padding: 10px;
+    color: #ffffff;
+    height: 300px; 
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: auto 100%;
+    animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+
+}
+.box h2{
+    margin: 0px 20px 200px 20px;
+    font-size: 30px;
+}
+
+.livingroom {
+    background-image: url("livingroom.jpg");
+}
+
+.kitchen {
+    background-image: url("kitchen.jpg");
+}
+
+.bathroom {
+    background-image: url("bathroom.jpg");
+}
+
+.bedroom {
+    background-image: url("bedroom.jpg");
+}
+
+.tinybox{
+    border-radius: 50px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.tinybox:hover {
+    background-color: #ffffff;
+}
+
+footer{
+    background-color: #fffffe2d;
+}
